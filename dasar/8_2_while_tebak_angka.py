@@ -8,7 +8,10 @@ while tanya:
   if int(jawaban) == angka_rahasia:
     print("Selamat Tebakan Anda Benar!")
     tanya = False
-  else:
-    print("Jawaban kamu salah!")
+  elif int(jawaban) > angka_rahasia:
+    print("Kelebihan! Kurangi lagi...")
+    tanya = True
+  elif int(jawaban) < angka_rahasia:
+    print("Kurang! Naikin lagi...")
     tanya = True
 
