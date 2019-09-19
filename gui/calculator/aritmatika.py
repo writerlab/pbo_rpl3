@@ -35,4 +35,5 @@ def sama_dengan(entry, hasil):
       y = teks[i+1:]
       result = int(x) - int(y)
       break
-  hasil.insert("end", result)
+  entry.delete(0, len(teks))
+  entry.insert("end", result)

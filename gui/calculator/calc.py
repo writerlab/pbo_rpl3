@@ -14,7 +14,7 @@ def bersihkan():
 
 
 # ENTRY
-entry = Entry(form, width=42, font='Prototype')
+entry = Entry(form, width=37, font='Prototype 15')
 hasil = Entry(form, width=42, font='Prototype')
 
 # NUMPAD
@@ -40,8 +40,8 @@ clear = Button(form, text='C', width=8, command=bersihkan)
 
 
 # PLACEMENT
-entry.grid(row=0, column=0, sticky='W', columnspan=30)
-hasil.grid(row=1, column=0, sticky='W', columnspan=30)
+entry.grid(ipady=3, row=0, column=0, sticky='W', columnspan=30)
+#hasil.grid(row=1, column=0, sticky='W', columnspan=30)
 tbl7.grid(row=2, column=0, sticky='W')
 tbl8.grid(row=2, column=1, sticky='W')
 tbl9.grid(row=2, column=2, sticky='W')
